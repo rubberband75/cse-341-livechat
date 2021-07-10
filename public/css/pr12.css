@@ -1,0 +1,88 @@
+.container {
+  height: 80vh;
+  overflow-y: auto;
+  width: 50%;
+}
+
+.container ul {
+  list-style: none;
+  width: 100%;
+  display: inline-block;
+}
+
+ul.chat li.message {
+  border: solid #dcdcdc 0.5rem;
+  border-radius: 1rem;
+  background-color: #f8f8ff;
+  margin: 1rem 0 1rem 0;
+  width: max-content;
+  font-size: 1.5rem;
+  padding: 1rem;
+  position: relative;
+  margin-bottom: 2em;
+  min-width: 5em;
+}
+
+ul.chat li.uMessage {
+  border: solid #008000 0.5rem;
+  margin-left: auto;
+  background-color: #008000;
+  color: #f8f8ff;
+}
+
+ul.chat li.adminMessage {
+  width: 100%;
+  text-align: center;
+  border: none;
+  background-color: #82c0ff;
+  color: #053a7d;
+}
+
+ul.chat li.message::after {
+  content: attr(date);
+  position: absolute;
+  left: 0;
+  bottom: -1.75em;
+  color: grey;
+}
+
+ul.chat li.uMessage::after {
+  left: unset;
+  right: 0;
+}
+
+.input {
+  width: 30%;
+  margin: 0 auto 0 auto;
+  border-radius: 1rem;
+  padding: 0.5rem;
+}
+
+.input textarea {
+  border: solid #000000 0.5rem;
+  width: 75%;
+}
+
+.displayname {
+  font-size: 1.5em;
+}
+
+.error-message {
+  background-color: #ff000033;
+  border: solid 1px #ff000077;
+  color: #ff0000;
+  padding: 5px;
+  margin: 10px 0;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.messageSender {
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+}
